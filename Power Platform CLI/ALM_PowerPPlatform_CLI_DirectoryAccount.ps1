@@ -42,7 +42,7 @@ pac solution import -p .\$Solution.zip
 #------------------------------------------------------------------------------------
 ## Take ownership of the Canvas App
 #Add-PowerAppsAccount
-#Set-AdminPowerAppOwner -AppName [[USER GUID]] -AppOwner $Global:currentSession.userId -EnvironmentName [[ENV GUID]]
+#Set-AdminPowerAppOwner -AppName [[APP GUID]] -AppOwner $Global:currentSession.userId -EnvironmentName [[ENV GUID]]
 #------------------------------------------------------------------------------------
 
 # THIS SCRIPT IS DIGITALLY SIGNED BELOW BY DAVID SODEN
@@ -53,8 +53,8 @@ pac solution import -p .\$Solution.zip
 # SIG # Begin signature block
 # MIIVjAYJKoZIhvcNAQcCoIIVfTCCFXkCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
 # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
-# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQU1fmHHtM4aBEY3l/ZmrkSneYJ
-# oR+gghHsMIIFbzCCBFegAwIBAgIQSPyTtGBVlI02p8mKidaUFjANBgkqhkiG9w0B
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUCEJKrYPlKQyjlM0gJh8l60j7
+# NdigghHsMIIFbzCCBFegAwIBAgIQSPyTtGBVlI02p8mKidaUFjANBgkqhkiG9w0B
 # AQwFADB7MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVy
 # MRAwDgYDVQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEh
 # MB8GA1UEAwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTIxMDUyNTAwMDAw
@@ -154,16 +154,16 @@ pac solution import -p .\$Solution.zip
 # AxMiU2VjdGlnbyBQdWJsaWMgQ29kZSBTaWduaW5nIENBIFIzNgIRANKIr2Sbj5oF
 # SFNQrsM7lvAwCQYFKw4DAhoFAKB4MBgGCisGAQQBgjcCAQwxCjAIoAKAAKECgAAw
 # GQYJKoZIhvcNAQkDMQwGCisGAQQBgjcCAQQwHAYKKwYBBAGCNwIBCzEOMAwGCisG
-# AQQBgjcCARUwIwYJKoZIhvcNAQkEMRYEFJa0GeDastdpCxvQRw34T/T9sXdMMA0G
-# CSqGSIb3DQEBAQUABIICAA+wCoBiRYrLSmnSW1Lu4kOfRGlMxNUtrNlgxmC9zAt9
-# KLX/V1m5fyzHNX1MnAFYWuRN9YQjz3QItYVikOgHVNvZZI5v85X3EDprZG5Y+GKR
-# E8XWXs2ubjrdn8EMoDrH46/UdL+APJGG9jRsyrCw2x/z94x60Ag24wVyu5WTWiQh
-# AKoIpNVw2dkfHj/7C8V2iApa+R9EXTIKJSSR7guXWZ1bJkN+7Oa80dXsPGHTAqyV
-# 3ja9FjyYGiGfjRHNaoGCzyRKbFFz4nXnTR5Uc0CVa7oh7BsyUOVBU4yDZZ+ab1PE
-# qr6jlYCtQqX7y8bZtzW0fi2277kyr0TtIGZWbgiS9mHkCHqLEnt9Tcr1HBaPyzoe
-# 8Vwal2qiMKSeA5nqhShSkJqEbjUUKQ5kEdp9Tl+Niiw8iikSwC6Cwk41Vyjf7bWm
-# AJ04Hb+ACYYCeTLbCva5nBhu9NNilA2cywT923w6zm/y3umg/cUJEGuf/TAllEzN
-# 7ruZu7x0JCbi8CBVoDVEumpoJMqxioK/CSJ0hJZ1hXkVmmor3cD6k8tMohOtnU2A
-# oFEuF48bLqtSAE0Y2JQwz5FAg+pktM3TN6GmgkhV/5/gw9+fqV940qhfhyGqvasA
-# hFRlHNFz/qeGrmzZRclO4YQ103veeYgsOyRZLDcBFZewuzMw7vDqNzXic4loBszh
+# AQQBgjcCARUwIwYJKoZIhvcNAQkEMRYEFILUAcj8+ZLYp5xwEZlx0PdEQ7uAMA0G
+# CSqGSIb3DQEBAQUABIICAEJ6b6qQJH/ztH0LQaQhQnnD5NJ3UUwxEgph4pXBxZsW
+# k6y5nXz42QNaCyCs6TyfBBT6mtx2GZ5RucCDK5CocnngMoEZrtUXy7fg4c7mcZcI
+# 1+HvloalhVhuwW4qPOB9khioOg1LNpFuNtbIs0HjfL5vqn7ieD6RbOURvvX5dv2r
+# AcjlAdVGTwY4BVqDEqcaelVMeUqPnGlX9IViqO6SwuFMS4u42uigF6e4hqkYzTKv
+# U6CBOulGBcd2tLjkKcgYxeqfClDiOD/Yt9E4qdeokx8gM8Y1pGSh0ru7SenNBABa
+# JlMkrqXZ3nNeiUnNg+0rrt0qtxIPDSSpGTKOgOmcUer44DVQTfAlXympvT0Ojawa
+# 1jpyua0/1n3wEpwb6SkTpe1uufnOn/fzNWGrpU3srwsFhN+FbwgGFzb8u4O3edJl
+# 0F0zqZrGUDiO9vu4+KfXCovm9ZOax09a/c7GiMexZejYfAEn4wFxOqAvo17FCK33
+# xXl6XBDaOTszJ5kNlHrlf9dy/u3RxSq9ENIKnDIYKn7Qs/bbP6jezH3jNfOVu1uw
+# 8PnJ1KR64Dwak8HflurTU4Sn3CPK3NuvVVr+tblxMYLh3RRr++1OYxy8tSLoDiZH
+# zdrF/FsZB0al7zoaMLuedhvzMA27i9Y3Bm7o8zVkWh3CX9g2h9Bv4ZOIou8pTM2W
 # SIG # End signature block
